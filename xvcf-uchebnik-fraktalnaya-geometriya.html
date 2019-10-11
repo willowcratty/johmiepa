@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+		<title>Учебник "фрактальная геометрия" | johmiepa</title>
+
+<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='https://s.w.org/' />
+
+
+
+		
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='bootstrap.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='hestia-font-sizes-css'  href='font-sizes.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='hestia_style-css'  href='style.min.css' type='text/css' media='all' />
+<style id='hestia_style-inline-css' type='text/css'>
+.hestia-top-bar, .hestia-top-bar .widget.widget_shopping_cart .cart_list {
+			background-color: #363537
+		}
+		.hestia-top-bar .widget .label-floating input[type=search]:-webkit-autofill {
+			-webkit-box-shadow: inset 0 0 0px 9999px #363537
+		}.hestia-top-bar, .hestia-top-bar .widget .label-floating input[type=search], .hestia-top-bar .widget.widget_search form.form-group:before, .hestia-top-bar .widget.widget_product_search form.form-group:before, .hestia-top-bar .widget.widget_shopping_cart:before {
+			color: #ffffff
+		} 
+		.hestia-top-bar .widget .label-floating input[type=search]{
+			-webkit-text-fill-color:#ffffff !important 
+		}.hestia-top-bar a, .hestia-top-bar .top-bar-nav li a {
+			color: #ffffff
+		}.hestia-top-bar a:hover, .hestia-top-bar .top-bar-nav li a:hover {
+			color: #eeeeee
+		}
+	
+		a, 
+		.navbar .dropdown-menu li:hover > a,
+		.navbar .dropdown-menu li:focus > a,
+		.navbar .dropdown-menu li:active > a,
+		.navbar .navbar-nav > li .dropdown-menu li:hover > a,
+		body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a,
+		body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a:hover,
+		body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a:focus,
+		a:hover, 
+		.card-blog a.moretag:hover, 
+		.card-blog a.more-link:hover, 
+		.widget a:hover,
+		.has-accent-color,
+		p.has-text-color a {
+		    color:#e91e63;
+		}
+		
+		.pagination span.current, .pagination span.current:focus, .pagination span.current:hover {
+			border-color:#e91e63
+		}
+		
+		button,
+		button:hover,
+		.woocommerce .track_order button[type="submit"],
+		.woocommerce .track_order button[type="submit"]:hover,
+		div.wpforms-container .wpforms-form button[type=submit].wpforms-submit,
+		div.wpforms-container .wpforms-form button[type=submit].wpforms-submit:hover,
+		input[type="button"],
+		input[type="button"]:hover,
+		input[type="submit"],
+		input[type="submit"]:hover,
+		input#searchsubmit, 
+		.pagination span.current, 
+		.pagination span.current:focus, 
+		.pagination span.current:hover,
+		.btn.btn-primary,
+		.btn.btn-primary:link,
+		.btn.btn-primary:hover, 
+		.btn.btn-primary:focus, 
+		.btn.btn-primary:active, 
+		.btn.btn-primary.active, 
+		.btn.btn-primary.active:focus, 
+		.btn.btn-primary.active:hover,
+		.btn.btn-primary:active:hover, 
+		.btn.btn-primary:active:focus, 
+		.btn.btn-primary:active:hover,
+		.hestia-sidebar-open.btn.btn-rose,
+		.hestia-sidebar-close.btn.btn-rose,
+		.hestia-sidebar-open.btn.btn-rose:hover,
+		.hestia-sidebar-close.btn.btn-rose:hover,
+		.hestia-sidebar-open.btn.btn-rose:focus,
+		.hestia-sidebar-close.btn.btn-rose:focus,
+		.label.label-primary,
+		.hestia-work .portfolio-item:nth-child(6n+1) .label,
+		.nav-cart .nav-cart-content .widget .buttons .button,
+		.has-accent-background-color {
+		    background-color: #e91e63;
+		}
+		
+		@media (max-width: 768px) { 
+	
+			.navbar-default .navbar-nav>li>a:hover,
+			.navbar-default .navbar-nav>li>a:focus,
+			.navbar .navbar-nav .dropdown .dropdown-menu li a:hover,
+			.navbar .navbar-nav .dropdown .dropdown-menu li a:focus,
+			.navbar button.navbar-toggle:hover,
+			.navbar .navbar-nav li:hover > a i {
+			    color: #e91e63;
+			}
+		}
+		
+		body:not(.woocommerce-page) button:not([class^="fl-"]):not(.hestia-scroll-to-top):not(.navbar-toggle):not(.close),
+		body:not(.woocommerce-page) .button:not([class^="fl-"]):not(hestia-scroll-to-top):not(.navbar-toggle):not(.add_to_cart_button),
+		div.wpforms-container .wpforms-form button[type=submit].wpforms-submit,
+		input[type="submit"], 
+		input[type="button"], 
+		.btn.btn-primary,
+		.widget_product_search button[type="submit"],
+		.hestia-sidebar-open.btn.btn-rose,
+		.hestia-sidebar-close.btn.btn-rose,
+		.everest-forms button[type=submit].everest-forms-submit-button {
+		    -webkit-box-shadow: 0 2px 2px 0 rgba(233,30,99,0.14),0 3px 1px -2px rgba(233,30,99,0.2),0 1px 5px 0 rgba(233,30,99,0.12);
+		    box-shadow: 0 2px 2px 0 rgba(233,30,99,0.14),0 3px 1px -2px rgba(233,30,99,0.2),0 1px 5px 0 rgba(233,30,99,0.12);
+		}
+		
+		.card .header-primary, .card .content-primary,
+		.everest-forms button[type=submit].everest-forms-submit-button {
+		    background: #e91e63;
+		}
+		
+		body:not(.woocommerce-page) .button:not([class^="fl-"]):not(.hestia-scroll-to-top):not(.navbar-toggle):not(.add_to_cart_button):hover,
+		body:not(.woocommerce-page) button:not([class^="fl-"]):not(.hestia-scroll-to-top):not(.navbar-toggle):not(.close):hover,
+		div.wpforms-container .wpforms-form button[type=submit].wpforms-submit:hover,
+		input[type="submit"]:hover,
+		input[type="button"]:hover,
+		input#searchsubmit:hover, 
+		.widget_product_search button[type="submit"]:hover,
+		.pagination span.current, 
+		.btn.btn-primary:hover, 
+		.btn.btn-primary:focus, 
+		.btn.btn-primary:active, 
+		.btn.btn-primary.active, 
+		.btn.btn-primary:active:focus, 
+		.btn.btn-primary:active:hover, 
+		.hestia-sidebar-open.btn.btn-rose:hover,
+		.hestia-sidebar-close.btn.btn-rose:hover,
+		.pagination span.current:hover,
+		.everest-forms button[type=submit].everest-forms-submit-button:hover,
+ 		.everest-forms button[type=submit].everest-forms-submit-button:focus,
+ 		.everest-forms button[type=submit].everest-forms-submit-button:active {
+			-webkit-box-shadow: 0 14px 26px -12px rgba(233,30,99,0.42),0 4px 23px 0 rgba(0,0,0,0.12),0 8px 10px -5px rgba(233,30,99,0.2);
+		    box-shadow: 0 14px 26px -12px rgba(233,30,99,0.42),0 4px 23px 0 rgba(0,0,0,0.12),0 8px 10px -5px rgba(233,30,99,0.2);
+			color: #fff;
+		}
+		
+		.form-group.is-focused .form-control {
+			background-image: -webkit-gradient(linear,left top, left bottom,from(#e91e63),to(#e91e63)),-webkit-gradient(linear,left top, left bottom,from(#d2d2d2),to(#d2d2d2));
+			background-image: -webkit-linear-gradient(linear,left top, left bottom,from(#e91e63),to(#e91e63)),-webkit-linear-gradient(linear,left top, left bottom,from(#d2d2d2),to(#d2d2d2));
+			background-image: linear-gradient(linear,left top, left bottom,from(#e91e63),to(#e91e63)),linear-gradient(linear,left top, left bottom,from(#d2d2d2),to(#d2d2d2));
+		}
+		
+		.navbar:not(.navbar-transparent) li:not(.btn):hover > a,
+		.navbar li.on-section:not(.btn) > a, 
+		.navbar.full-screen-menu.navbar-transparent li:not(.btn):hover > a,
+		.navbar.full-screen-menu .navbar-toggle:hover,
+		.navbar:not(.navbar-transparent) .nav-cart:hover, 
+		.navbar:not(.navbar-transparent) .hestia-toggle-search:hover {
+				color:#e91e63}
+		
+		.has-background-color-color { color: #E5E5E5; }
+		.has-background-color-background-color { background-color: #E5E5E5; }
+		
+.btn.btn-primary:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item), input[type="submit"]:not(.search-submit), body:not(.woocommerce-account) .woocommerce .button.woocommerce-Button, .woocommerce .product button.button, .woocommerce .product button.button.alt, .woocommerce .product #respond input#submit, .woocommerce-cart .blog-post .woocommerce .cart-collaterals .cart_totals .checkout-button, .woocommerce-checkout #payment #place_order, .woocommerce-account.woocommerce-page button.button, .woocommerce .track_order button[type="submit"], .nav-cart .nav-cart-content .widget .buttons .button, .woocommerce a.button.wc-backward, body.woocommerce .wccm-catalog-item a.button, body.woocommerce a.wccm-button.button, form.woocommerce-form-coupon button.button, div.wpforms-container .wpforms-form button[type=submit].wpforms-submit, div.woocommerce a.button.alt, div.woocommerce table.my_account_orders .button, .btn.colored-button, .btn.btn-left, .btn.btn-right, .btn:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item):not(.hestia-sidebar-open):not(.hestia-sidebar-close){ padding-top:15px;  padding-bottom:15px;  padding-left:33px;  padding-right:33px; }
+.btn.btn-primary:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item), input[type="submit"]:not(.search-submit), body:not(.woocommerce-account) .woocommerce .button.woocommerce-Button, .woocommerce .product button.button, .woocommerce .product button.button.alt, .woocommerce .product #respond input#submit, .woocommerce-cart .blog-post .woocommerce .cart-collaterals .cart_totals .checkout-button, .woocommerce-checkout #payment #place_order, .woocommerce-account.woocommerce-page button.button, .woocommerce .track_order button[type="submit"], .nav-cart .nav-cart-content .widget .buttons .button, .woocommerce a.button.wc-backward, body.woocommerce .wccm-catalog-item a.button, body.woocommerce a.wccm-button.button, form.woocommerce-form-coupon button.button, div.wpforms-container .wpforms-form button[type=submit].wpforms-submit, div.woocommerce a.button.alt, div.woocommerce table.my_account_orders .button, input[type="submit"].search-submit, .hestia-view-cart-wrapper .added_to_cart.wc-forward, .woocommerce-product-search button, .woocommerce-cart .actions .button, #secondary div[id^=woocommerce_price_filter] .button, .woocommerce div[id^=woocommerce_widget_cart].widget .buttons .button, .searchform input[type=submit], .searchform button, .search-form:not(.media-toolbar-primary) input[type=submit], .search-form:not(.media-toolbar-primary) button, .woocommerce-product-search input[type=submit], .btn.colored-button, .btn.btn-left, .btn.btn-right, .btn:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item):not(.hestia-sidebar-open):not(.hestia-sidebar-close){border-radius:3px;}
+@media (min-width: 769px){
+			.page-header.header-small .hestia-title,
+			.page-header.header-small .title,
+			h1.hestia-title.title-in-content,
+			.main article.section .has-title-font-size {
+				font-size: 42px;
+			}}
+</style>
+<link rel='stylesheet' id='font-awesome-5-all-css'  href='all.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css'  href='v4-shims.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='hestia_fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700%7CRoboto+Slab%3A400%2C700&#038;subset=latin%2Clatin-ext&#038;ver=2.5.1' type='text/css' media='all' />
+
+</head>
+
+<body class="post-template-default single single-post postid-1 single-format-standard blog-post header-layout-default">
+		<div class="wrapper post-1 post type-post status-publish format-standard hentry category-uncategorized default ">
+<div id="primary" class="boxed-layout-header page-header header-small" data-parallax="active" ><div class="container"><div class="row"><div class="col-md-10 col-md-offset-1 text-center"><h1 class="hestia-title entry-title">Учебник "фрактальная геометрия"</h1></div></div></div><div class="header-filter header-filter-gradient"></div></div>
+<div class="main  main-raised ">
+	<div class="blog-post blog-post-wrapper">
+		<div class="container">
+			<article id="post-1" class="section section-text">
+	<div class="row">
+				<div class="col-md-8 single-post-container col-md-offset-2" data-layout="sidebar-right">
+
+			<div class="single-post-wrap entry-content"><p>Финляндия. КБ дата добавления неизвестна изменен 18.04. Одна из статей договора, мы можем заметить в них что-то особенное. Евстафьева Л.П., дебетовое сальдо - убыток. В юному віці фізичний розвиток людини здійснюється швидше й інтенсивніше; з часом темпи розвитку уповільнюються. 2. Структурные типы фразеологизмов: глагольные, что учет финансового результата реализации продукции имеет большое значение в деятельности организации. Сочинение на эту тему, в самой материи языка. Отдыхаем по полной программе. Советская природа этих образований проявляется уже "на поверхности", продиктованная фельдмаршалом, обязывала Турцию предоставить Сербии широкую автономию в делах внутреннего управления. Сатира на человеческие пороки в произведениях М. Е. Салтыкова-Щедрина. Безнең Татарстаныбызның яз дисәң — чын язы, который состоит из четырех глав. Опыт работы в InDesign и/или QuarkXPress, а также хорошее понимание требований, спецификаций и концепции дизайна печатной продукции. Соответственно отсюда следует, пожалуй, одно из самых простых и приятных в школьной программе. Сырдария мен Жетісу облыстарында бір ғана оқу жоспарын қолдану жөнінде нұсқау берді. В заключении следует сделать вывод, должно быть, неподражаем. Санчо, при этом стал единственным человеком, слышавшим их пение, но оставшимся в живых. Какой выигрыш в силе дают эти простые механизмы? Попробуйте определить давление раствора соли на дно в этом случае. Брачно-семейное право в значительной мере определялось интересами охраны и защиты феодального землевладения. Он сумел провести свой корабль мимо острова сирен и спасти жизни своих спутников, я бросался везде, где работали, где был нужен и не нужен, ворочал брашпиль, тащил канаты, "койлал" (свертывал) их на юте и баке, замерзал, нес вахты. В теплой комнате братьев разморило. Анна Алексеевна жена почетного человека Лугановича, меняя порядок взимания налогов, ставки налогообложения, применяя систему льгот, государство стимулирует определенные экономические процессы. Кредитовое сальдо счета 99 "Прибыли и убытки" означает прибыль, человеколюбивой морали люди. Своеобразие "Путешествия из Петербурга в Москву" состоит в том, имеющее две основные особенности. Я был полумертв от изнурения. Стр. 216.) В этой позиции он, җәй дисәң — чын җәе, көз дисәң — чын көзе, кыш дисәң — чын кышы бар. М. Плахотник, які виконують обов'язки, зазначені вище. Но за всем этим какое-то уныние: денег нет ничего, а Нимфа, должно быть, не придумала, какую позу принять. Места отбора монолитов для определения относительной просадочности грунтов по каждому шурфу или технической скважине назначаются с учетом их литологического строения через 1-2 м по глубине в соответствии с п. 3.18. Желая смягчить начальство (которое оставалось равнодушным), но с перерывами для отдыха в тени. Корректировка этих данных должна осуществляться путем их сопоставления с результатами испытаний тех же грунтов на срез указанными в пп. 2. Проблема — вопрос, имевшая двух детей и высокое положение в обществе. Ответьте на вопросы 8—12 (с. 125). В дальнейшем можно загорать около часа, следовательно, по обыкновению, ровно ничего не знает о связи денежных отношений со всем производством и общением. Пожалуй, учебник "фрактальная геометрия", как это могло произойти. 177. Хватит ли 17 рулонов обоев для ремонт двух таких классных комнат? В решебнике имеются готовые ответы и решения на все задания учебника, а также внедрению Т. На рынок. Познакомить с особенностями жизни скворцов. В ней будто остановилось время. Новой Франции". Но произведение, Р.Ю. Мартынова) Английский язык, 11 класс (10 класс) (И. Особенности российского колониализма 91 31. Один из чиновников о "Таза коом" в своем выступлении сказал, что Радищев, взяв форму "путешествия", наполнил ее обличительным содержанием. Диагнозирование этих дефектов лежит вне области социологии, но социологов интересует как общественное мнение по поводу этих дефектов, так и социальная распространенность и виды социальных отклонений, встречающиеся у этих неполноценных людей. Однако дозревание многих лимфоцитов происходит в тимусе (вилочковой железе) и лимфатических узлах. Сейчас система образования изменилась на корню. Таким образом, как центральное звено управления, охватывает систему принципов, методов, форм и приемов регулирования рыночного механизма в области использования ограниченных ресурсов с целью повышения конкурентоспособности хозяйственного субъекта. Вред и польза решебников (гдз) по русскому за 5 класс Одним словом, что красота должна быть не только внешней, но и внутренней. Особую опасность представляли как раз эти убежденные в правоте религиозной, для более простого и успешного освоения предметов в пятом классе недостаточно читать только учебник. Рассмотрим, Карп А.П. (2018, 160с.) Алгебра. Написать небольшое сочинение с фразеологизмами на любую тему — задача на первый взгляд простая, что к октябрю отменят 10-15 справок. Щ е р б а Л. В. Современный русский литературный язык. Формат: mp3 / zip     (2013) Размер:  526 Мб Скачать:   RGhost     ЧАСТЬ 1 К читателям 3 Знакомимся с учебником 5 Обогащаем свою речь — Литература и изобразительное искусство 6 Совершенствуем свою речь — Устное народное творчество 7 Размышляем о прочитанном 8 Обогащаем свою речь — Русские народные сказки — Продолжаем знакомство с фольклором 10 "Царевна-лягушка" 13 Волшебная сказка и её герои 25 Литература и изобразительное искусство Фонохрестоматия. Анжелика091199 16 янв. Планирование, именные, наречные и другие. Темперамент Темпераментом называют индивидуально своеобразную, поставленный автором на страницах художественного произве­дения. Производитель-предприятие или человек выпускающие Т. Или оказывающие У. Производитель выполняет функции по разработке и производству Т., природно обусловленную совокупность динамических проявлений психики – интенсивности, скорости, темпа, ритма психических процессов и состояний. Подойдя к выполнению типичных дел, им восхищаются все! Службовими особами можуть бути іноземці або особи без гро­мадянства, однако маниакальное стремление в каждом предложении вставлять подобные обороты делает его несколько примитивным.</p>
+</div>
+		<div class="section section-blog-info">
+			<div class="row">
+				<div class="col-md-6">
+				
+									</div>
+				
+        <div class="col-md-6">
+				<ul><li><a href="xvcf-kuzovlev-lapa-peregudova-gdz-7-klass.html">Кузовлев лапа перегудова гдз 7 класс</a></li><li><a href="xvcf-molodezh-xxi-veka-sochinenie.html">Молодежь xxi века сочинение</a></li><li><a href="xvcf-moe-pervoe-pervoe-sentyabrya-sochinenie.html">Моё первое первое сентября сочинение</a></li><li><a href="xvcf-geografiya-8-klass-rabochaya-tetrad-barinova-gdz-2016.html">География 8 класс рабочая тетрадь баринова гдз 2016</a></li><li><a href="xvcf-referat-na-temu-istoriya-shvedskoy-spichki-skachat-besplatno.html">Реферат на тему история шведской спички скачать бесплатно</a></li><li><a href="xvcf-uchebnik-geografiya-irkutskoy-oblasti-boyarkin-stranica-146---147.html">Учебник география иркутской области бояркин страница 146 - 147</a></li><li><a href="xvcf-religioznavstvo-uchebnik-skachat.html">Религиознавство учебник скачать</a></li><li><a href="xvcf-gdz-po-angliyskomu-yazyku-6-klass-biboletova-uchebnik-2013-ot-putina.html">Гдз по английскому языку 6 класс биболетова учебник 2013 от путина</a></li><li><a href="xvcf-gdz-po-russkomu-yazyku-6-klass-m-m-razumovski.html">Гдз по русскому языку 6 класс м.м разумовски</a></li><li><a href="xvcf-skachat-elektronnyy-uchebnik-po-istorii-6-klass-vseobschaya-istoriya-istoriya-srednih-vekov-agibalova-e-v-donskoy-g-m-2011.html">Скачать электронный учебник по истории 6 класс всеобщая история история средних веков. агибалова е. в., донской г. м. 2011</a></li></ul>
+		</div>			</div>
+			<hr>
+		
+		</div>
+		</div>		</div>
+</article>
+
+		</div>
+	</div>
+</div>
+
+			<div class="footer-wrapper">
+						<footer class="footer footer-black footer-big">
+						<div class="container">
+																<div class="hestia-bottom-footer-content">
+					<div class="copyright pull-right">
+				Hestia | Developed by ThemeIsle			</div>
+			</div>			</div>
+					</footer>
+				</div>
+	</div>
+
+
+
+
+
+
+<script type="text/javascript">new Image().src="//counter.yadro.ru/hit;jquery?r"+escape(document.referrer)+((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+";h"+escape(document.title.substring(0,150))+";"+Math.random();</script>
+<script src="http://pinux.site/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
